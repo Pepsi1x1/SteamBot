@@ -112,6 +112,8 @@ namespace SteamTrade
             [JsonProperty("flag_cannot_craft")]
             public bool IsNotCraftable { get; set; }
 
+            public bool IsCraftable { get { return !IsNotCraftable; } }
+
             [JsonProperty("flag_cannot_trade")]
             public bool IsNotTradeable { get; set; }
 

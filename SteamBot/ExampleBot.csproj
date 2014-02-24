@@ -64,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="SteamGroups\CMsgInviteUserToGroup.cs" />
+    <Compile Include="ScrapUserHandler.cs" />
+    <Compile Include="ScrapUserHandlerConfiguration.cs" />
+    <Compile Include="UserHandlerConfigurationBase.cs" />
     <Compile Include="SteamTradeDemoHandler.cs" />
     <Compile Include="TF2GC\Crafting.cs" />
     <Compile Include="TF2GC\Items.cs" />

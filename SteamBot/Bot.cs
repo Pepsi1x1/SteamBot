@@ -26,6 +26,10 @@ namespace SteamBot
         // the bot's name will change.
         public string DisplayName { get; private set; }
 
+        // The filename that contains the bot's configuration specifically
+        // for its user handler
+        internal string UserHandlerConfigName { get; private set; }
+
         // The response to all chat messages sent to it.
         public string ChatResponse;
 
@@ -109,6 +113,7 @@ namespace SteamBot
                 Password = config.Password
             };
             DisplayName  = config.DisplayName;
+            UserHandlerConfigName = config.UserHandlerConfigName;
             ChatResponse = config.ChatResponse;
             MaximumTradeTime = config.MaximumTradeTime;
             MaximiumActionGap = config.MaximumActionGap;

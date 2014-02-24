@@ -123,6 +123,7 @@ namespace SteamBot
             public string ChatResponse { get; set; }
             public string LogFile { get; set; }
             public string BotControlClass { get; set; }
+            public string UserHandlerConfigName { get; set; }
             public int MaximumTradeTime { get; set; }
             public int MaximumActionGap { get; set; }
             public string DisplayNamePrefix { get; set; }
