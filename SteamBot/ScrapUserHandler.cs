@@ -79,6 +79,11 @@ namespace SteamBot
             }
         }
 
+        public override bool OnGroupAdd()
+        {
+            return true;
+        }
+
         public override bool OnFriendAdd()
         {
             Bot.log.Success(Bot.SteamFriends.GetFriendPersonaName(OtherSID) + " (" + OtherSID.ToString() + ") added me!");
@@ -184,6 +189,11 @@ namespace SteamBot
                                               "Sorry, but you were either AFK or took too long and the trade was canceled.");
             Bot.log.Warn("User was kicked because he was AFK.");
             Bot.SteamFriends.SetPersonaState(EPersonaState.LookingToTrade);
+        }
+
+        public override void OnTradeSuccess()
+        {
+            Bot.log.Success("OnTradeSuccess");
         }
 
         public override void OnTradeInit()
